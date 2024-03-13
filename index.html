@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="icon" href="favicon.svg">
+    <script src="https://kit.fontawesome.com/9b39bd699b.js" crossorigin="anonymous"></script>
+</head>
+<body class="overhid">
+    <section class="front">
+        <div id="view">
+            <div id="navi">
+                <div class="logo" onclick="location.reload()">
+                    <img src="favicon.svg" alt="png"> <span> Task Manager</span>
+                </div>
+                <div class="butt">
+                    <button id="toup" onclick="touping()">Try Taking Notes</button>
+                </div>
+            </div>
+            <div id="contianer-text">
+                <div id="text">
+                    <p id="t1">Do your best</p>
+                    <p id="t2">Task-Managing</p>
+                    <p id="t3">Streamline your workflow, boost productivity, and achieve goals with our intuitive task manager solution.</p>
+                    <p id="t4">Organize tasks, meet deadlines, and maximize productivity effortlessly.</p>
+                    <button id="toup" onclick="touping()">Try Taking Notes</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="smallnav">    
+            <div class="irg"><i class="fa-solid fa-xmark" id="iconn"></i></div>
+            <div class="calandar">
+                <span>Select a date:</span>
+                <input type="date" id="calendar2" name="calendar">
+            </div>
+            <div class="bookadd">
+                <h3>Notebooks</h3>
+                <h3>+</h3>
+            </div>
+            <div class="Notebooks">
+                <div class="on" id="notebook">
+                    My Notebook
+                </div>
+                <!-- Add notebooks here -->
+            </div>
+        </div>
+    </section>
+
+    <section class="header">
+        <div>
+            <i class="fa-solid fa-bars" id="navham"></i>
+        </div>
+        <div class="logo">
+            <img src="favicon.svg" alt="png"><span>Task Manager</span>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="left">
+            <div class="logo">
+                <img src="favicon.svg" alt="png"><span>Task Manager</span>
+            </div>
+            <div class="add">
+                <span id="plus">+</span> New Note
+            </div>
+            <div class="calandar">
+                <span>Select a date:</span>
+                <input type="date" id="calendar" name="calendar">
+            </div>
+            <div class="bookadd">
+                <h3>Notebooks</h3>
+                <h3 style="cursor: pointer;" id="noteadd">+</h3>
+            </div>
+            <div class="Notebooks">
+                <div class="on" id="notebook">
+                    My Notebook
+                </div>
+                <!-- Add notebooks here -->
+            </div>
+        </div>
+        <div class="right">
+            <h2 id="timechnge"><h2 id="user"><!-- using js get user name --></h2></h2>
+            <h4 id="today"><!-- using js get date --></h4>
+            <div style="font-size: 0.91rem; font-weight: 800; margin-bottom: 2vh;height: auto;color: #D0C4BF;">My Notebook</div>
+            <!-- Notebooks -->
+            <div class="notescontainer">
+                <!-- Notes Here -->
+                <!-- <div class="notes">
+                        <div class="operation">
+                        <div id="edited">
+                            <div class="ttlm"></div>
+                            <textarea class="ttlw" placeholder="Title Here"></textarea>
+                        </div>
+                        <div class="but">
+                            <button class="edit"> <i class="fas fa-edit"></i> </button>
+                            <button class="delete"> <i class="fas fa-trash-alt"></i> </button>
+                        </div>
+                        </div>
+                        <div class="main"></div>
+                        <textarea class="write"></textarea>
+                </div> -->
+            </div>
+            <div class="add">
+                <span id="plus">+</span>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
